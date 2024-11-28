@@ -10,3 +10,36 @@ http://localhost:5000/api/carrito/actualizar --> actualizar carrito
 http://localhost:5000/api/ordenes/5/crear --> crear orden con el id del usuario creado
 
 
+
+Rutas de Usuario
+
+    POST /api/usuarios/registro
+    POST /api/usuarios/iniciarsesion
+    GET /api/usuarios/perfil
+    PUT /api/usuarios/perfil
+Rutas de Productos
+
+    POST /api/productos/
+    GET /api/productos/
+    GET /api/productos/:id
+    PUT /api/productos/:id
+    DELETE /api/productos/:id
+Rutas de Categorías
+
+    POST /api/categorias/
+    GET /api/categorias/
+    PUT /api/categorias/:id
+    DELETE /api/categorias/:id
+
+Rutas de Carrito
+
+    POST /api/carrito/crear
+    GET /api/carrito/:usuarioId
+    PUT /api/carrito/actualizar
+    DELETE /api/carrito/vaciar/:usuarioId
+
+Rutas de Órdenes
+
+    POST /api/ordenes/:usuarioId/crear
+    GET /api/ordenes/:usuarioId/orden/:ordenId
+    GET /api/ordenes/:usuarioId
